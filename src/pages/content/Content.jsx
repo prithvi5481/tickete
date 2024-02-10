@@ -99,7 +99,7 @@ const Content = () => {
 
     return (
     <div className='container'>
-        <div className='w-full h-auto flex justify-between'>
+        <div className='w-full h-auto flex justify-between mobile'>
 
             <div className='boxr'>
                 <div>
@@ -130,15 +130,15 @@ const Content = () => {
                                         <path d="M4.58008 0.363281L4.30664 2.97461L6.93164 2.22949L7.13672 3.68555L4.68262 3.9043L6.27539 6.03027L4.94922 6.74805L3.79395 4.45801L2.76172 6.74121L1.38086 6.03027L2.95996 3.9043L0.519531 3.67871L0.751953 2.22949L3.3291 2.97461L3.05566 0.363281H4.58008Z" fill="#C62A2F"/>
                                     </svg> */}
                                 </div>
-                                <div className='grid grid-cols-2 pt-4'>
-                                    <select className='border rounded-lg mr-3'>
+                                <div className='grid grid-cols-2 pt-4 gridmanage'>
+                                    <select className='border rounded-lg mr-3 country'>
                                         <option><img src={earth} alt='earth'/> Country code *</option>
                                         <option>+91</option>
                                         <option>+00</option>
                                         <option>+45</option>
                                     </select>
                                     <input  placeholder='Phone No. *' className='border px-2 py-2 rounded-lg'/>
-                                    <input  placeholder='Email *' className='border px-2 py-2 rounded-lg mt-4 mr-3'/>
+                                    <input  placeholder='Email *' className='border px-2 py-2 rounded-lg mt-4 mr-3 email'/>
                                     <input  placeholder='Confirm email *' className='border px-2 py-2 rounded-lg mt-4'/>
                                 </div>
                                 <hr className='mt-4'/>
@@ -152,12 +152,12 @@ const Content = () => {
                         <p className='text-xs text-gray-500 pt-2'>We need a few more details to complete your reservation.</p>
                     </div>
                     <div>
-                        <div className='grid grid-cols-2 pt-4'>
+                        <div className='grid grid-cols-2 pt-4 gridmanage'>
                             <input placeholder='Input label *'
                                 required
-                                className='border px-2 py-2 rounded-lg mt-2 mr-3'
+                                className='border px-2 py-2 rounded-lg mt-2 mr-3 email xyz'
                             />
-                            <select className='border rounded-lg px-2 mt-2' placeholder='Select *'>
+                            <select className='border rounded-lg px-2 mt-2 country1' placeholder='Select *'>
                                 <option><img src={earth} alt='earth'/>Select *</option>
                                 <option>+91</option>
                                 <option>+00</option>
@@ -192,28 +192,29 @@ const Content = () => {
                             <img src={amex} alt='rupay' className='h-4 w-6 border rounded-md'/>
                         </div>
 
-                        <div className='grid grid-cols-2 pt-4'>
-                            <input  placeholder='Name on card *' className='border px-2 py-2 rounded-lg mt-4 mr-3 ml-2'/>
-                            <input  placeholder='card number *' className='border px-2 py-2 rounded-lg mt-4 mr-2'/>
-                            <input  placeholder='Expiry date *' className='border px-2 py-2 rounded-lg mt-4 mr-3 ml-2'/>
-                            <input  placeholder='<CVV/CVC> *' className='border px-2 py-2 rounded-lg mt-4 mr-2'/>
+                        <div className='grid grid-cols-2 pt-4 gridmanage'>
+                            <input  placeholder='Name on card *' className='border px-2 py-2 rounded-lg mt-4 mr-3 ml-2 abd'/>
+                            <input  placeholder='card number *' className='border px-2 py-2 rounded-lg mt-4 mr-2 abd'/>
+                            <input  placeholder='Expiry date *' className='border px-2 py-2 rounded-lg mt-4 mr-3 ml-2 abd'/>
+                            <input  placeholder='<CVV/CVC> *' className='border px-2 py-2 rounded-lg mt-4 mr-2 abd'/>
                         </div>
                         <hr className='mt-6 ml-2 mr-2'></hr>
                         <div className='mt-4'>
                             <div className='flex justify-between'>
                                 <div className='text-md font-semibold ml-2'>Total payable : $XXX</div>
-                                <div className='text-white text-xs mt-1 bg-green-600 w-[15%] mr-4 pl-2 border rounded-xl'>You save &lt;price&gt;</div>
+                                <div className='text-white text-xs mt-1 bg-green-600 w-[25%] mr-4 pl-2 border rounded-xl'>You save &lt;price&gt;</div>
                             </div>
                         </div>
                         <div className='text-gray-500 text-xs pl-2 mt-2'>You will be charged in AED <img src={info} className='h-3 w-3 inline ml-2 mb-1'/></div>
                         <div className='text-xs text-gray-500 px-2 mt-4'>By clicking "confirm & pay", you agree to <span className='text-blue-400 cursor-pointer'>Tickete's general terms and conditions</span> and <span className='text-blue-400 cursor-pointer'>cancellation policy.</span></div>
 
-                        <div className='bg-black text-white text-sm py-2 px-2 mt-4 ml-2 rounded-lg cursor-pointer w-[20%] mb-4'>
+                        <div className='bg-black text-white text-sm py-2 pl-24 ml-[8%] mr-[8%] mb-2 mt-4 rounded-lg cursor-pointer'>
                         <svg className='inline' width="18" height="18" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.375 6.87512H15.625V4.81262C15.625 3.7186 15.1904 2.66939 14.4168 1.89581C13.6432 1.12222 12.594 0.687622 11.5 0.687622C10.406 0.687622 9.35677 1.12222 8.58318 1.89581C7.8096 2.66939 7.375 3.7186 7.375 4.81262V6.87512H4.625C4.26033 6.87512 3.91059 7.01999 3.65273 7.27785C3.39487 7.53571 3.25 7.88545 3.25 8.25012V17.8751C3.25 18.2398 3.39487 18.5895 3.65273 18.8474C3.91059 19.1053 4.26033 19.2501 4.625 19.2501H18.375C18.7397 19.2501 19.0894 19.1053 19.3473 18.8474C19.6051 18.5895 19.75 18.2398 19.75 17.8751V8.25012C19.75 7.88545 19.6051 7.53571 19.3473 7.27785C19.0894 7.01999 18.7397 6.87512 18.375 6.87512ZM11.5 14.0939C11.296 14.0939 11.0967 14.0334 10.9271 13.9201C10.7575 13.8068 10.6253 13.6457 10.5472 13.4573C10.4692 13.2688 10.4488 13.0615 10.4886 12.8614C10.5284 12.6614 10.6266 12.4776 10.7708 12.3334C10.915 12.1892 11.0988 12.091 11.2988 12.0512C11.4989 12.0114 11.7062 12.0318 11.8946 12.1099C12.0831 12.1879 12.2441 12.3201 12.3575 12.4897C12.4708 12.6593 12.5312 12.8587 12.5312 13.0626C12.5312 13.3361 12.4226 13.5984 12.2292 13.7918C12.0358 13.9852 11.7735 14.0939 11.5 14.0939ZM14.25 6.87512H8.75V4.81262C8.75 4.08328 9.03973 3.3838 9.55546 2.86808C10.0712 2.35235 10.7707 2.06262 11.5 2.06262C12.2293 2.06262 12.9288 2.35235 13.4445 2.86808C13.9603 3.3838 14.25 4.08328 14.25 4.81262V6.87512Z" fill="#EDEEF0"/>
                         </svg>
-                            <button type='submit' className='pl-1'>Confirm & pay</button>
-                        </div>
+
+                        <button type='submit' className='ml-2'>Confirm & pay</button>
+                    </div>
                     </div>
                     
                     <div className='mt-4'>
@@ -279,15 +280,16 @@ const Content = () => {
                         <div className='text-md font-semibold ml-2'>Total payable</div>
                         <div className='text-md font-semibold mr-2'>$XXX</div>
                     </div>
-                    <div className='text-green-500 text-xs mt-1 bg-green-200 w-[30%] ml-4 pl-2 border rounded-xl'>You saved &lt;price&gt;</div>
+                    <div className='text-green-500 text-xs mt-1 bg-green-200 w-[35%] ml-4 pl-2 border rounded-xl'>You saved &lt;price&gt;</div>
                     <div className='text-gray-500 text-xs pl-2 mt-4'>You will be charged in AED <img src={info} className='h-3 w-3 inline ml-2 mb-1'/></div>
                     <div className='text-xs text-gray-500 px-2 mt-2'>By clicking "confirm & pay", you agree to <span className='text-blue-400 cursor-pointer'>Tickete's general terms and conditions</span> and <span className='text-blue-400 cursor-pointer'>cancellation policy.</span></div>
                     <div className='bg-black text-white text-sm py-2 pl-24 ml-[8%] mr-[8%] mb-2 mt-4 rounded-lg cursor-pointer'>
-                    <svg className='inline' width="18" height="18" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.375 6.87512H15.625V4.81262C15.625 3.7186 15.1904 2.66939 14.4168 1.89581C13.6432 1.12222 12.594 0.687622 11.5 0.687622C10.406 0.687622 9.35677 1.12222 8.58318 1.89581C7.8096 2.66939 7.375 3.7186 7.375 4.81262V6.87512H4.625C4.26033 6.87512 3.91059 7.01999 3.65273 7.27785C3.39487 7.53571 3.25 7.88545 3.25 8.25012V17.8751C3.25 18.2398 3.39487 18.5895 3.65273 18.8474C3.91059 19.1053 4.26033 19.2501 4.625 19.2501H18.375C18.7397 19.2501 19.0894 19.1053 19.3473 18.8474C19.6051 18.5895 19.75 18.2398 19.75 17.8751V8.25012C19.75 7.88545 19.6051 7.53571 19.3473 7.27785C19.0894 7.01999 18.7397 6.87512 18.375 6.87512ZM11.5 14.0939C11.296 14.0939 11.0967 14.0334 10.9271 13.9201C10.7575 13.8068 10.6253 13.6457 10.5472 13.4573C10.4692 13.2688 10.4488 13.0615 10.4886 12.8614C10.5284 12.6614 10.6266 12.4776 10.7708 12.3334C10.915 12.1892 11.0988 12.091 11.2988 12.0512C11.4989 12.0114 11.7062 12.0318 11.8946 12.1099C12.0831 12.1879 12.2441 12.3201 12.3575 12.4897C12.4708 12.6593 12.5312 12.8587 12.5312 13.0626C12.5312 13.3361 12.4226 13.5984 12.2292 13.7918C12.0358 13.9852 11.7735 14.0939 11.5 14.0939ZM14.25 6.87512H8.75V4.81262C8.75 4.08328 9.03973 3.3838 9.55546 2.86808C10.0712 2.35235 10.7707 2.06262 11.5 2.06262C12.2293 2.06262 12.9288 2.35235 13.4445 2.86808C13.9603 3.3838 14.25 4.08328 14.25 4.81262V6.87512Z" fill="#EDEEF0"/>
-                    </svg>
+                        <svg className='inline' width="18" height="18" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.375 6.87512H15.625V4.81262C15.625 3.7186 15.1904 2.66939 14.4168 1.89581C13.6432 1.12222 12.594 0.687622 11.5 0.687622C10.406 0.687622 9.35677 1.12222 8.58318 1.89581C7.8096 2.66939 7.375 3.7186 7.375 4.81262V6.87512H4.625C4.26033 6.87512 3.91059 7.01999 3.65273 7.27785C3.39487 7.53571 3.25 7.88545 3.25 8.25012V17.8751C3.25 18.2398 3.39487 18.5895 3.65273 18.8474C3.91059 19.1053 4.26033 19.2501 4.625 19.2501H18.375C18.7397 19.2501 19.0894 19.1053 19.3473 18.8474C19.6051 18.5895 19.75 18.2398 19.75 17.8751V8.25012C19.75 7.88545 19.6051 7.53571 19.3473 7.27785C19.0894 7.01999 18.7397 6.87512 18.375 6.87512ZM11.5 14.0939C11.296 14.0939 11.0967 14.0334 10.9271 13.9201C10.7575 13.8068 10.6253 13.6457 10.5472 13.4573C10.4692 13.2688 10.4488 13.0615 10.4886 12.8614C10.5284 12.6614 10.6266 12.4776 10.7708 12.3334C10.915 12.1892 11.0988 12.091 11.2988 12.0512C11.4989 12.0114 11.7062 12.0318 11.8946 12.1099C12.0831 12.1879 12.2441 12.3201 12.3575 12.4897C12.4708 12.6593 12.5312 12.8587 12.5312 13.0626C12.5312 13.3361 12.4226 13.5984 12.2292 13.7918C12.0358 13.9852 11.7735 14.0939 11.5 14.0939ZM14.25 6.87512H8.75V4.81262C8.75 4.08328 9.03973 3.3838 9.55546 2.86808C10.0712 2.35235 10.7707 2.06262 11.5 2.06262C12.2293 2.06262 12.9288 2.35235 13.4445 2.86808C13.9603 3.3838 14.25 4.08328 14.25 4.81262V6.87512Z" fill="#EDEEF0"/>
+                        </svg>
 
-                        <button type='submit' className='ml-2'>Confirm & pay</button></div>
+                        <button type='submit' className='ml-2'>Confirm & pay</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -351,7 +353,7 @@ const Content = () => {
                 <div className='pt-10'>
                     <hr></hr>
                     <div className='text-white flex justify-start text-xs items-center pt-3'>
-                        <div className='pl-6'>&middot; Made with</div>
+                        <div className='pl-6'>&middot; Made with love</div>
                         <div className='pl-2'>&middot; Privacy policy</div>
                         <div className='pl-2'>&middot; Terms of usage</div>
                         <div className='pl-2'>&middot; Cancellation policy</div>
