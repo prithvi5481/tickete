@@ -94,3 +94,76 @@
 
 }
 
+
+
+@media screen and (max-width: 600px) {
+    .mobile{
+        flex-direction: column-reverse;   
+    }
+    .boxl{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .boxr{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .bigbox{
+        flex-direction: column;
+    }
+    .boxdl{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .boxdr{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .gridmanage{
+        grid-template-columns: 1fr;
+    }
+    .country{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        margin-right: 0px;
+    }
+    .email{
+        margin-right: 0px;
+    }
+    .xyz{
+        margin-bottom: 8px;
+    }
+    .country1{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        margin-right: 0px;
+    }
+    .abd{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .mn{
+        right:75%;
+    }
+    .fullname{
+        right:75%;
+    }
+    .phn{
+        bottom: 56%;
+        right: 74%;
+    }
+    .em{
+        bottom: 68px;
+        right: 85%;
+    }
+    .select{
+        bottom: 80%;
+        right: 70%;
+    }
+    .cem{
+        right:66%;
+    }
+}
+
