@@ -144,5 +144,26 @@
         margin-left: 8px;
         margin-right: 8px;
     }
+    .mn{
+        right:75%;
+    }
+    .fullname{
+        right:75%;
+    }
+    .phn{
+        bottom: 56%;
+        right: 74%;
+    }
+    .em{
+        bottom: 68px;
+        right: 85%;
+    }
+    .select{
+        bottom: 80%;
+        right: 70%;
+    }
+    .cem{
+        right:66%;
+    }
 }
 
