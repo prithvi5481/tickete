@@ -150,5 +150,11 @@
     .fullname{
         right:75%;
     }
+    .confirm{
+        padding-left:8px;
+    }
+    .confirm1{
+        padding-left:60px;
+    }
 }
 
