@@ -1,0 +1,96 @@
+.container{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    height: 100vh;
+    width: 100%;
+    /* background-color: gainsboro; */
+}
+
+.boxr{
+    /* background-color: beige; */
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxl{
+    /* background-color: bisque; */
+    margin-top: 50px;
+    width: 25%;
+    margin-right: 10%;
+    border: 1px solid rgb(194, 188, 188);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.required{
+    color: red;
+    position: relative;
+    transform: translateY(-50%);
+    top: -50%;
+}
+
+.logos img{
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.logos {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.arrow{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 5;
+}
+
+.dashed-line{
+    /* border: none; */
+    border-top: 1px dashed #000;
+    margin: 10px 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.dashed1-line{
+    margin-top: 16px;
+    border-color: rgb(195,190,195);
+}
+
+.bigbox{
+    margin-top: 44px;
+}
+
+.boxdl{
+    margin-left: 10%;
+    width: 40%;
+    margin-right: 5%;
+    padding-left: 8px;
+}
+
+.boxdr{
+    margin-right: 10%;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.box-cartoon{
+    height: 116px;
+    width: 100%;
+    margin-top: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+
+}
+
