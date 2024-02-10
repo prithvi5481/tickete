@@ -125,26 +125,22 @@ const Content = () => {
                         <form>
                             <div>
                                 <div className='relative'>
-                                    <input placeholder="Full Name" required class="w-full border px-2 py-2 rounded-lg" />
-                                    {/* <svg className='absolute bottom-4 right-[70%] mn' width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
-                                        <path d="M4.58008 0.363281L4.30664 2.97461L6.93164 2.22949L7.13672 3.68555L4.68262 3.9043L6.27539 6.03027L4.94922 6.74805L3.79395 4.45801L2.76172 6.74121L1.38086 6.03027L2.95996 3.9043L0.519531 3.67871L0.751953 2.22949L3.3291 2.97461L3.05566 0.363281H4.58008Z" fill="#C62A2F"/>
-                                    </svg> */}
-                                    <span className='absolute bottom-3 right-[88%] text-red-500 fullname'>*</span>
+                                    <input placeholder="Full Name *" required class="w-full border px-2 py-2 rounded-lg" />
                                 </div>
                                 <div className='grid grid-cols-2 pt-4 gridmanage relative'>
                                     <select className='border rounded-lg mr-3 country'>
-                                        <option><img src={earth} alt='earth'/> Country code </option>
+                                        <option><img src={earth} alt='earth'/> Country code *</option>
                                         <option>+91</option>
                                         <option>+00</option>
                                         <option>+45</option>
                                     </select>
-                                    <span className='absolute bottom-[68px] right-[85%] text-red-500 select'>*</span>
-                                    <input  placeholder='Phone No. ' className='border px-2 py-2 rounded-lg'/>
-                                    <span className='absolute bottom-[68px] right-[38%] text-red-500 phn'>*</span>
-                                    <input  placeholder='Email ' className='border px-2 py-2 rounded-lg mt-4 mr-3 email'/>
-                                    <span className='absolute bottom-3 right-[92%] text-red-500 em'>*</span>
-                                    <input  placeholder='Confirm email ' className='border px-2 py-2 rounded-lg mt-4'/>
-                                    <span className='absolute bottom-3 right-[34%] text-red-500 cem'>*</span>
+                                    
+                                    <input  placeholder='Phone No. *' className='border px-2 py-2 rounded-lg'/>
+                                    
+                                    <input  placeholder='Email *' className='border px-2 py-2 rounded-lg mt-4 mr-3 email'/>
+                                    
+                                    <input  placeholder='Confirm email *' className='border px-2 py-2 rounded-lg mt-4'/>
+                                    
                                 </div>
                                 <hr className='mt-4'/>
                             </div>
